@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 //import MyMap from "./MyMap";
 import { Map, TileLayer, Marker } from "react-leaflet";
-import './App.css'
+//import './App.css'
 export default class App extends React.Component {
   constructor(props) {
     super(props);
