@@ -6,10 +6,11 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      lat: 50.0893,
-      lng: 14.4284,
+      lat: 24.8607,
+      lng: 67.0311,
       zoom: 12
-    };
+    }
+    
   }
  
   render() {
