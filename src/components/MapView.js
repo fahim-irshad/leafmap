@@ -25,7 +25,7 @@ class MapView extends Component {
           attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
         />
         </LayersControl.BaseLayer>
-        <LayersControl.Overlay name="PAK Charts">
+        <LayersControl.Overlay checked name="PAK Charts">
          <LayerGroup>
         <Markers venues={data.venues}/>
         </LayerGroup>

@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import {Marker, LayersControl} from 'react-leaflet';
+import {Marker} from 'react-leaflet';
 import {VenueLocationIcon} from './VenueLocationIcon';
 import MarkerPopup from './MarkerPopup';
 
