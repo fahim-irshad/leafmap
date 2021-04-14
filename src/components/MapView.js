@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import { Map, TileLayer,LayerGroup,LayersControl } from 'react-leaflet';
+import { Map, TileLayer,LayerGroup,LayersControl} from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import data from '../assets/data';
-import Markers from './VenueMarkers';
+import Polygons from './VenueMarkers';
 
 class MapView extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentLocation: { lat: 52.52437, lng: 13.41053 },
-      zoom: 12,
+      currentLocation: { lat: 24.824000000000069,
+        lng: 67.106000000000051},
+      zoom: 9,
     }
   }
 
@@ -27,7 +28,7 @@ class MapView extends Component {
         </LayersControl.BaseLayer>
         <LayersControl.Overlay checked name="PAK Charts">
          <LayerGroup>
-        <Markers venues={data.venues}/>
+        <Polygons  venues={data.venues}/>
         </LayerGroup>
         </LayersControl.Overlay>
         </LayersControl>

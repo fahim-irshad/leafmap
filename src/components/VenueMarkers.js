@@ -1,21 +1,23 @@
 import React, { Fragment } from 'react'
-import {Marker} from 'react-leaflet';
-import {VenueLocationIcon} from './VenueLocationIcon';
+import {Polygon} from 'react-leaflet';
 import MarkerPopup from './MarkerPopup';
+import Markertip from './tooltip';
+
 
 const VenueMarkers = (props) => {
   const { venues } = props;
 
-  const markers = venues.map((venue, index) => (
+  const polygons = venues.map((venue, index) => (
     
-    <Marker key={index} position={venue.geometry} icon={VenueLocationIcon} >
-      <MarkerPopup data={venue}/>
-    </Marker>
+    <Polygon  key={index} positions={venue.geometry}>
+     <Markertip data={venue}></Markertip>
+     <MarkerPopup data={venue}/>
+      
+    </Polygon>
     
   ));
 
-  return <Fragment>{markers}</Fragment>
-        
-};
+  return <Fragment>{polygons}</Fragment>
+        };
 
 export default VenueMarkers;
