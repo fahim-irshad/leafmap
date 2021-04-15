@@ -3,6 +3,12 @@ import { Map, TileLayer,LayerGroup,LayersControl} from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import data from '../assets/data';
 import Polygons from './VenueMarkers';
+import Polygons1 from './VenueMarkersHarbour';
+import Polygons2 from './VenueMarkersBerthing';
+import Polygons3 from './VenueMarkersApproaches';
+import Polygons4 from './VenueMarkersCoastal';
+import Polygons5 from './VenueMarkersOverview';
+import { Layer } from 'leaflet';
 
 class MapView extends Component {
   constructor(props) {
@@ -26,12 +32,49 @@ class MapView extends Component {
           attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
         />
         </LayersControl.BaseLayer>
-        <LayersControl.Overlay checked name="PAK Charts">
-         <LayerGroup>
-        <Polygons  venues={data.venues}/>
+       
+        <LayersControl.Overlay checked name="Harbour">
+        <LayerGroup>
+        <Polygons1  venues={data.venues}/>
         </LayerGroup>
         </LayersControl.Overlay>
-        </LayersControl>
+        
+        <LayersControl.Overlay name="Berthing">
+        <LayerGroup>
+        <Polygons2  venues={data.venues}/>
+        </LayerGroup>
+        </LayersControl.Overlay>
+         
+
+         
+        
+        <LayersControl.Overlay checked name="Approches">
+        <LayerGroup>
+        <Polygons3  venues={data.venues}/>
+        </LayerGroup>
+        </LayersControl.Overlay>
+
+        <LayersControl.Overlay name="Coastal">
+         <LayerGroup>
+         <Polygons4  venues={data.venues}/>
+         </LayerGroup>
+         </LayersControl.Overlay>
+
+         <LayersControl.Overlay name="Overview">
+         <LayerGroup>
+         <Polygons5  venues={data.venues}/>
+         </LayerGroup>
+         </LayersControl.Overlay>
+
+         <LayersControl.Overlay name="General">
+         <LayerGroup>
+         <Polygons  venues={data.venues}/>
+         </LayerGroup>
+         </LayersControl.Overlay>
+
+         </LayersControl>
+
+       
       </Map>
     );
   }

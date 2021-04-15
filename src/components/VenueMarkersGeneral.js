@@ -7,7 +7,7 @@ import Markertip from './tooltip';
 const VenueMarkers = (props) => {
   const { venues } = props
 
-  const polygons = venues.filter(venue=>venue.TITLE.includes('BOMBAY')).map((venue, index) => (
+  const polygons1 = venues.filter(venue=>venue.TITLE.includes('BOMBAY')).map((venue, index) => (
     
     <Polygon  key={index} positions={venue.geometry} >
    
@@ -18,7 +18,7 @@ const VenueMarkers = (props) => {
   
   ));
   
-  return <Fragment>{polygons}</Fragment>
+  return <Fragment>{polygons1}</Fragment>
         };
 
 export default VenueMarkers;

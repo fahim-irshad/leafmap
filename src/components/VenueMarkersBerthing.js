@@ -4,10 +4,10 @@ import MarkerPopup from './MarkerPopup';
 import Markertip from './tooltip';
 
 
-const VenueMarkers = (props) => {
+const VenueMarkersBerthing = (props) => {
   const { venues } = props
 
-  const polygons = venues.filter(venue=>venue.TITLE.includes('BOMBAY')).map((venue, index) => (
+  const polygons2 = venues.filter(venue=>venue.TITLE.includes('BERTHING')).map((venue, index) => (
     
     <Polygon  key={index} positions={venue.geometry} >
    
@@ -18,7 +18,7 @@ const VenueMarkers = (props) => {
   
   ));
   
-  return <Fragment>{polygons}</Fragment>
+  return <Fragment>{polygons2}</Fragment>
         };
 
-export default VenueMarkers;
+export default VenueMarkersBerthing;
