@@ -4,7 +4,6 @@ import 'leaflet/dist/leaflet.css';
 import data from '../assets/data';
 import Polygons from './VenueMarkers';
 import Polygons1 from './VenueMarkersHarbour';
-import Polygons2 from './VenueMarkersBerthing';
 import Polygons3 from './VenueMarkersApproaches';
 import Polygons4 from './VenueMarkersCoastal';
 import Polygons5 from './VenueMarkersOverview';
@@ -39,13 +38,6 @@ class MapView extends Component {
         </LayerGroup>
         </LayersControl.Overlay>
         
-        <LayersControl.Overlay name="Berthing">
-        <LayerGroup>
-        <Polygons2  venues={data.venues}/>
-        </LayerGroup>
-        </LayersControl.Overlay>
-         
-
          
         
         <LayersControl.Overlay checked name="Approches">
