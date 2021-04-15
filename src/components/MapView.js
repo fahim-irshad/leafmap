@@ -7,7 +7,7 @@ import Polygons1 from './VenueMarkersHarbour';
 import Polygons3 from './VenueMarkersApproaches';
 import Polygons4 from './VenueMarkersCoastal';
 import Polygons5 from './VenueMarkersOverview';
-import { Layer } from 'leaflet';
+
 
 class MapView extends Component {
   constructor(props) {
