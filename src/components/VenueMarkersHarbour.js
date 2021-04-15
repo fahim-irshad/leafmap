@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import {Polygon, LayersControl} from 'react-leaflet';
+import {Polygon} from 'react-leaflet';
 import MarkerPopup from './MarkerPopup';
 import Markertip from './tooltip';
 
