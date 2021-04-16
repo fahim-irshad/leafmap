@@ -15,7 +15,7 @@ class MapView extends Component {
     this.state = {
       currentLocation: { lat: 24.70,
         lng: 65.00},
-      zoom: 6,
+      zoom: 5,
     }
   }
 
