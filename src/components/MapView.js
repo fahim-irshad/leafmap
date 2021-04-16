@@ -13,9 +13,9 @@ class MapView extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentLocation: { lat: 24.824000000000069,
-        lng: 67.30},
-      zoom: 8,
+      currentLocation: { lat: 24.70,
+        lng: 65.00},
+      zoom: 6,
     }
   }
 
@@ -27,43 +27,42 @@ class MapView extends Component {
         <LayersControl position="topright">
         <LayersControl.BaseLayer checked name="OSM Base Map">
         <TileLayer
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
+          url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+          attribution="Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"
         />
         </LayersControl.BaseLayer>
-       
-        <LayersControl.Overlay checked name="Harbour">
-        <LayerGroup>
-        <Polygons1  venues={data.venues}/>
-        </LayerGroup>
-        </LayersControl.Overlay>
-        
          
-        
-        <LayersControl.Overlay checked name="Approches">
-        <LayerGroup>
-        <Polygons3  venues={data.venues}/>
-        </LayerGroup>
-        </LayersControl.Overlay>
-
-        <LayersControl.Overlay name="Coastal">
-         <LayerGroup>
-         <Polygons4  venues={data.venues}/>
-         </LayerGroup>
-         </LayersControl.Overlay>
-
-         <LayersControl.Overlay name="Overview">
-         <LayerGroup>
-         <Polygons5  venues={data.venues}/>
-         </LayerGroup>
-         </LayersControl.Overlay>
-
-         <LayersControl.Overlay name="General">
+      
+        <LayersControl.Overlay name="General">
          <LayerGroup>
          <Polygons  venues={data.venues}/>
          </LayerGroup>
          </LayersControl.Overlay>
 
+        <LayersControl.Overlay checked name="Overview">
+         <LayerGroup>
+         <Polygons5  venues={data.venues}/>
+         </LayerGroup>
+         </LayersControl.Overlay>
+
+        <LayersControl.Overlay checked name="Coastal">
+         <LayerGroup>
+         <Polygons4  venues={data.venues}/>
+         </LayerGroup>
+         </LayersControl.Overlay>
+
+         
+         <LayersControl.Overlay  name="Approches">
+        <LayerGroup>
+        <Polygons3  venues={data.venues}/>
+        </LayerGroup>
+        </LayersControl.Overlay>
+        
+        <LayersControl.Overlay  name="Harbour">
+        <LayerGroup>
+        <Polygons1  venues={data.venues}/>
+        </LayerGroup>
+        </LayersControl.Overlay>
          </LayersControl>
 
        
