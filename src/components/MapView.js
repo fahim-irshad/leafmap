@@ -9,7 +9,9 @@ import Polygons4 from './VenueMarkersCoastal';
 import Polygons5 from './VenueMarkersOverview';
 
 
+
 class MapView extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -17,19 +19,24 @@ class MapView extends Component {
         lng: 65.00},
       zoom: 5,
     }
+   
+     
   }
 
   render() {
     const { currentLocation, zoom } = this.state;
 
     return (
-      <Map center={currentLocation} zoom={zoom}>
+      <div className="aa"> 
+      <p>ENC Chart Catalogue</p>
+    <Map center={currentLocation} zoom={zoom} placeholder={<div><h1>ddddddd</h1></div>} >
         <LayersControl position="topright">
         <LayersControl.BaseLayer checked name="Imagery Base Map">
         <TileLayer
           url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
           attribution="Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"
         />
+        
         </LayersControl.BaseLayer>
          
       
@@ -64,9 +71,9 @@ class MapView extends Component {
         </LayerGroup>
         </LayersControl.Overlay>
          </LayersControl>
-
-       
-      </Map>
+         
+         </Map>
+     </div>
     );
   }
 }

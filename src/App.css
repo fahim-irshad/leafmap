@@ -1,4 +1,12 @@
+
 .leaflet-container {
+  position: absolute;
   width: 100vw;
-  height: 100vh;
+  height:100vh;
+  z-index: -1;}
+p {
+  text-align: center;
+  margin:auto;
+  background-color: darkolivegreen;
+ 
 }
