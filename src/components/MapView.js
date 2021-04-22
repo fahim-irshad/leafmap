@@ -28,7 +28,7 @@ class MapView extends Component {
 
     return (
       <div className="aa"> 
-      <p>ENC Catalogue</p>
+      
     <Map center={currentLocation} zoom={zoom} placeholder={<div><h1>ddddddd</h1></div>} >
         <LayersControl position="topright">
         <LayersControl.BaseLayer checked name="Imagery Base Map">
@@ -40,13 +40,13 @@ class MapView extends Component {
         </LayersControl.BaseLayer>
          
       
-        <LayersControl.Overlay name="General">
+        <LayersControl.Overlay name="Overview">
          <LayerGroup>
          <Polygons  venues={data.venues}/>
          </LayerGroup>
          </LayersControl.Overlay>
 
-        <LayersControl.Overlay checked name="Overview">
+        <LayersControl.Overlay checked name="General">
          <LayerGroup>
          <Polygons5  venues={data.venues}/>
          </LayerGroup>
@@ -73,6 +73,7 @@ class MapView extends Component {
          </LayersControl>
          
          </Map>
+         <span><p>ENC Catalogue</p></span>
      </div>
     );
   }
