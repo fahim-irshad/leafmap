@@ -1,12 +1,24 @@
 
+.aa{
+  text-align: center;
+}
 .leaflet-container {
+  text-align: justify;
   position: absolute;
   width: 100vw;
   height:100vh;
   z-index: -1;}
 p {
-  text-align: center;
-  margin:auto;
-  background-color: darkolivegreen;
- 
+  position: absolute;
+  margin-top:1%;
+  padding: 0.2rem;
+  font-size: larger;
+  color: white;
+  background-color: blueviolet;
+  -moz-border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+  display: inline-block;
 }
