@@ -28,7 +28,7 @@ class MapView extends Component {
 
     return (
       <div className="aa"> 
-      <p>ENC Chart Catalogue</p>
+      <p>ENC Catalogue</p>
     <Map center={currentLocation} zoom={zoom} placeholder={<div><h1>ddddddd</h1></div>} >
         <LayersControl position="topright">
         <LayersControl.BaseLayer checked name="Imagery Base Map">
