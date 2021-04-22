@@ -7,7 +7,7 @@ import Markertip from './tooltip';
 const VenueMarkersHarbour = (props) => {
   const { venues } = props
 
-  const polygons1 = venues.filter(venue=>venue.TITLE.includes('HARBOUR')).map((venue, index) => (
+  const polygons1 = venues.filter(venue=>venue.BAND.includes('harbour')).map((venue, index) => (
     
     <Polygon  key={index} positions={venue.geometry} >
    
