@@ -3,7 +3,7 @@
   "venues" : [
     
     {
-      
+      "BAND": "overview",
       "OBJECTID" : 18,
       "CHART_NO" : "PAK-57 (INT 751)",
       "TITLE" : "BOMBAY  TO  MASQAT ",
@@ -33,7 +33,7 @@
         ]
   },
   {
-      
+    "BAND": "general",
     "OBJECTID" : 11,
     "CHART_NO" : "PAK-33",
     "TITLE" : "JIWANI TO SIR CREEK",
@@ -63,7 +63,7 @@
       ]
 },
   {
-      
+    "BAND": "coastal",
     "OBJECTID" : 21,
     "CHART_NO" : "PAK-50 (INT 7312)",
     "TITLE" : "KARACHI TO SIR CREEK",
@@ -93,7 +93,7 @@
       ]
 },
   {
-      
+    "BAND": "general",
     "OBJECTID" : 19,
     "CHART_NO" : "PAK-58 (INT 7019)",
     "TITLE" : "KARACHI TO RAS AL-HADD",
@@ -125,7 +125,7 @@
    
     
     {
-      
+       "BAND": "approach",
         "OBJECTID" : 1,
         "CHART_NO" : "PAK-20 (INT 7319)",
         "TITLE" : "PORT MUHAMMAD BIN QASIM AND APPROACHES",
@@ -154,7 +154,7 @@
           ]
     },
     {
-      
+       "BAND": "harbour",
         "OBJECTID" : 2,
         "CHART_NO" : "PAK-21",
         "TITLE" : "KORANGI FISH HARBOUR",
@@ -184,7 +184,7 @@
           ]
     },
     {
-      
+        "BAND": "coastal",
         "OBJECTID" : 3,
         "CHART_NO" : "PAK-22",
         "TITLE" : "RAS MUARI TO MIANI HOR",
@@ -214,7 +214,7 @@
           ]
     },
     {
-      
+      "BAND": "coastal",
         "OBJECTID" : 4,
         "CHART_NO" : "PAK-23",
         "TITLE" : "PHOR NAI TO RAS MALAN",
@@ -244,7 +244,7 @@
           ]
     },
     {
-      
+      "BAND": "coastal",
         "OBJECTID" : 5,
         "CHART_NO" : "PAK-24",
         "TITLE" : "RAS MALAN TO ORMARA",
@@ -274,7 +274,7 @@
           ]
     },
     {
-      
+       "BAND": "coastal",
         "OBJECTID" : 7,
         "CHART_NO" : "PAK-26",
         "TITLE" : "RAS SHAMAL BANDAR TO GWADAR",
@@ -304,7 +304,7 @@
           ]
     },
     {
-      
+      "BAND": "coastal",
         "OBJECTID" : 8,
         "CHART_NO" : "PAK-27",
         "TITLE" : "GWADAR TO GWATAR BAY",
@@ -334,7 +334,7 @@
           ]
     },
     {
-      
+       "BAND": "coastal",
         "OBJECTID" : 9,
         "CHART_NO" : "PAK-28",
         "TITLE" : "KHUDDI ISLAND TO KHOBAR CREEK",
@@ -364,7 +364,7 @@
           ]
     },
     {
-      
+       "BAND": "harbour",
         "OBJECTID" : 10,
         "CHART_NO" : "PAK-30 (INT 7315)",
         "TITLE" : "KARACHI HARBOUR",
@@ -395,7 +395,7 @@
     },
     
     {
-      
+      "BAND": "approach",
         "OBJECTID" : 12,
         "CHART_NO" : "PAK-34",
         "TITLE" : "GWATER BAY",
@@ -425,7 +425,7 @@
           ]
     },
     {
-      
+      "BAND": "harbour",
         "OBJECTID" : 13,
         "CHART_NO" : "PAK-40 (INT 7317)",
         "TITLE" : "GWADAR DEEP WATER PORT",
@@ -455,7 +455,7 @@
           ]
     },
     {
-      
+      "BAND": "approach",
         "OBJECTID" : 14,
         "CHART_NO" : "PAK-41",
         "TITLE" : "GWADAR (EAST & WEST BAY)",
@@ -485,7 +485,7 @@
           ]
     },
     {
-      
+      "BAND": "harbour",
         "OBJECTID" : 15,
         "CHART_NO" : "PAK-44",
         "TITLE" : "APPROACHES TO KETI BANDAR",
@@ -515,7 +515,7 @@
           ]
     },
     {
-      
+      "BAND": "approach",
         "OBJECTID" : 16,
         "CHART_NO" : "PAK-45 (INT 7313)",
         "TITLE" : "APPROACHES TO GWADAR",
@@ -545,7 +545,7 @@
           ]
     },
     {
-      
+      "BAND": "approach",
         "OBJECTID" : 17,
         "CHART_NO" : "PAK-05 (INT 7314)",
         "TITLE" : "APPROACHES TO KARACHI",
@@ -578,7 +578,7 @@
     
     
     {
-      
+       "BAND": "harbour",
         "OBJECTID" : 22,
         "CHART_NO" : "PAK-31",
         "TITLE" : "APPROACHES TO KORANGI AND GHIZRI CREEK",
@@ -608,7 +608,7 @@
           ]
     },
     {
-      
+       "BAND": "coastal",
         "OBJECTID" : 23,
         "CHART_NO" : "PAK-25",
         "TITLE" : "RAS BASOL TO PASNI",
@@ -639,7 +639,7 @@
     },
    
   {
-    
+    "BAND": "harbour",
       "OBJECTID" : 20,
       "CHART_NO" : "PAK-61",
       "TITLE" : "PASNI BAY",
