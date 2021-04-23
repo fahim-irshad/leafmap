@@ -59,7 +59,7 @@ class MapView extends Component {
          </LayersControl.Overlay>
 
          
-         <LayersControl.Overlay  name="Approach">
+         <LayersControl.Overlay  name="Approah">
         <LayerGroup>
         <Polygons3  venues={data.venues}/>
         </LayerGroup>
