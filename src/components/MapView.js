@@ -46,7 +46,7 @@ class MapView extends Component {
          </LayerGroup>
          </LayersControl.Overlay>
 
-        <LayersControl.Overlay checked name="General">
+        <LayersControl.Overlay name="General">
          <LayerGroup>
          <Polygons5  venues={data.venues}/>
          </LayerGroup>
