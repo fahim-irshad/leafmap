@@ -1,6 +1,6 @@
 
 .aa{
-  text-align: center;
+  
 }
 .leaflet-container {
   text-align: justify;
@@ -11,8 +11,9 @@
 p {
   position: absolute;
   margin-top:1%;
+  margin-left:45vw;
   padding: 0.2rem;
-  font-size: 2vw;
+  font-size: larger;
   color: white;
   background-color: blueviolet;
   -moz-border-radius: 0.2rem;
