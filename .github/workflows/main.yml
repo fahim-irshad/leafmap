@@ -33,7 +33,7 @@ jobs:
     
     - name: Creating build
       run: yarn build
-    #- name: installing react-leaflet
+    #- name: installng react-leaflet
     #  run: npm install react-leaflet # npm
     #- name: adding react-leaflet to yarn
     #  run: yarn add react-leaflet # Yarn
