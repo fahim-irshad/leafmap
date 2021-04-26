@@ -7,7 +7,11 @@ const MarkerPopup = (props) => {
 
   return  (<Popup>
     <div className='poup-text'>
-  Name:&nbsp;&nbsp;&nbsp;{CHART_NO}<br/>Title:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{TITLE}<br/>Scale:&nbsp;&nbsp;&nbsp;&nbsp;{SCALE}<br/>Edition:&nbsp;&nbsp;{EDITION}</div>
+  <span><b>Name:&nbsp;&nbsp;&nbsp;&nbsp;</b></span><span>{CHART_NO}</span><br/>
+  <span><b>Title:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></span><span>{TITLE}</span><br/>
+  <span><b>Scale:&nbsp;&nbsp;&nbsp;&nbsp;</b></span><span>{SCALE}</span><br/>
+  <span><b>Edition:&nbsp;&nbsp;</b></span><span>{EDITION}</span><br/>
+  </div>
   </Popup>);
 };
 
