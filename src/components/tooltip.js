@@ -5,8 +5,8 @@ const Markertip = (props) => {
   const {CHART_NO} = props.data;
   
 
-  return  (<Tooltip>
-    <div className='poup-tex'>{CHART_NO}</div>
+  return  (<Tooltip sticky d opacity={1}>
+    <div className='poup-text'>{CHART_NO}</div>
   </Tooltip>);
 };
 
