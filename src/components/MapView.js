@@ -33,14 +33,14 @@ class MapView extends Component {
         
         <LayersControl position="topright">
           
-        <LayersControl.BaseLayer  name="Imagery Base Map">
+        <LayersControl.BaseLayer  name="Base Imagery">
         
         <TileLayer
           url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
           attribution="Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"
         />
         </LayersControl.BaseLayer>
-        <LayersControl.BaseLayer checked name="Ocean Base Map">
+        <LayersControl.BaseLayer checked name="Base Map">
         <TileLayer
           url="https://{s}.tile.jawg.io/jawg-matrix/{z}/{x}/{y}{r}.png?access-token=pRLv2n6tHZvaFBHJG4zCKdRvzvnbEZkdSZyHB4LMZdWUCaGX4Jp7rHAWI7vkubLM"
           attribution='<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
