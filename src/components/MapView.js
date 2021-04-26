@@ -17,7 +17,7 @@ class MapView extends Component {
     this.state = {
       currentLocation: { lat: 24.70,
         lng: 65.00},
-      zoom: 5,
+      zoom: 6,
     }
    
      
@@ -30,15 +30,17 @@ class MapView extends Component {
       <div className="aa"> 
       
     <Map center={currentLocation} zoom={zoom} placeholder={<div><h1>ddddddd</h1></div>} >
+        
         <LayersControl position="topright">
-       <LayersControl.BaseLayer checked name=" Base Imagery">
+          
+        <LayersControl.BaseLayer checked name="Imagery Base Map">
         
         <TileLayer
           url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
           attribution="Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"
         />
         </LayersControl.BaseLayer>
-        <LayersControl.BaseLayer  name="Base Map">
+        <LayersControl.BaseLayer  name="Ocean Base Map">
         <TileLayer
           url="https://{s}.tile.jawg.io/jawg-matrix/{z}/{x}/{y}{r}.png?access-token=pRLv2n6tHZvaFBHJG4zCKdRvzvnbEZkdSZyHB4LMZdWUCaGX4Jp7rHAWI7vkubLM"
           attribution='<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -47,7 +49,6 @@ class MapView extends Component {
         
         </LayersControl.BaseLayer>
          
-         
       
         <LayersControl.Overlay name="Overview">
          <LayerGroup>
@@ -55,7 +56,7 @@ class MapView extends Component {
          </LayerGroup>
          </LayersControl.Overlay>
 
-        <LayersControl.Overlay name="General">
+        <LayersControl.Overlay  name="General">
          <LayerGroup>
          <Polygons5  venues={data.venues}/>
          </LayerGroup>
@@ -68,7 +69,7 @@ class MapView extends Component {
          </LayersControl.Overlay>
 
          
-         <LayersControl.Overlay  name="Approach">
+         <LayersControl.Overlay  name="Approches">
         <LayerGroup>
         <Polygons3  venues={data.venues}/>
         </LayerGroup>
