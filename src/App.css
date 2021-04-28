@@ -36,12 +36,12 @@ p {
   border-color: white;
   border-style: double;
   border-width: 0.5vw;
+  padding: 0vw;
 }
 .leaflet-popup.tip{background-color: white;}
 .poup-text{
   
   display: inline-block;
-  
   color: white;
   background-color:  darkslategray;
 
