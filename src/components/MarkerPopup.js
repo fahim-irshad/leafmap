@@ -9,20 +9,20 @@ const MarkerPopup = (props) => {
   <div className='poup-text'>
   <table id='customers'> 
   <tr>
-  <th><span><b>Name:</b></span></th>
-  <th><span>{CHART_NO}</span></th>
+  <td><b>Name:</b></td>
+  <td>{CHART_NO}</td>
   </tr>
   <tr>
-  <th><span><b>Title:</b></span></th>
-  <th><span>{TITLE}</span></th>
+  <td><b>Title:</b></td>
+  <td>{TITLE}</td>
   </tr>
   <tr>
-  <th><span><b>Scale:</b></span></th>
-  <th><span>{SCALE}</span></th>
+  <td><b>Scale:</b></td>
+  <td>{SCALE}</td>
   </tr>
   <tr>
-  <th><span><b>Edition:&nbsp;</b></span></th>
-  <th><span>{EDITION}</span></th>
+  <td>p<b>Edition:</b>&nbsp;</td>
+  <td>{EDITION}</td>
   </tr>
    </table>
   </div>
