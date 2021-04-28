@@ -21,7 +21,7 @@ const MarkerPopup = (props) => {
   <th><span>{SCALE}</span></th>
   </tr>
   <tr>
-  <th><span><b>Edition:</b></span></th>
+  <th><span><b>Edition:&nbsp;</b></span></th>
   <th><span>{EDITION}</span></th>
   </tr>
    </table>
