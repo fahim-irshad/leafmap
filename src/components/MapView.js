@@ -41,7 +41,7 @@ class MapView extends Component {
         />
         </LayersControl.BaseLayer>
   
-        <LayersControl.BaseLayer  name="Base Map">
+        <LayersControl.BaseLayer  name="Ocean Map">
         
         <TileLayer
           url="https://server.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer/tile/{z}/{y}/{x}"
