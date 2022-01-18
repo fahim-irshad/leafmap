@@ -33,7 +33,7 @@ class MapView extends Component {
         
         <LayersControl position="topright">
           
-        <LayersControl.BaseLayer  name="Base Imagery">
+        <LayersControl.BaseLayer checked  name="Base Imagery">
         
         <TileLayer
           url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
@@ -50,7 +50,7 @@ class MapView extends Component {
         </LayersControl.BaseLayer>
   
   
-        <LayersControl.BaseLayer checked name="Base Map">
+        <LayersControl.BaseLayer name="Base Map">
         <TileLayer
           url="https://{s}.tile.jawg.io/jawg-matrix/{z}/{x}/{y}{r}.png?access-token=pRLv2n6tHZvaFBHJG4zCKdRvzvnbEZkdSZyHB4LMZdWUCaGX4Jp7rHAWI7vkubLM"
           attribution='<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
