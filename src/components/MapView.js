@@ -40,6 +40,16 @@ class MapView extends Component {
           attribution="Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"
         />
         </LayersControl.BaseLayer>
+  
+        <LayersControl.BaseLayer  name="Base Map">
+        
+        <TileLayer
+          url="https://server.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer/tile/{z}/{y}/{x}"
+          attribution="Tiles &copy; Esri &mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri"
+        />
+        </LayersControl.BaseLayer>
+  
+  
         <LayersControl.BaseLayer checked name="Base Map">
         <TileLayer
           url="https://{s}.tile.jawg.io/jawg-matrix/{z}/{x}/{y}{r}.png?access-token=pRLv2n6tHZvaFBHJG4zCKdRvzvnbEZkdSZyHB4LMZdWUCaGX4Jp7rHAWI7vkubLM"
