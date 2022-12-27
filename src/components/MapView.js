@@ -41,13 +41,7 @@ class MapView extends Component {
         />
         </LayersControl.BaseLayer>
   
-        <LayersControl.BaseLayer checked name="Ocean Map">
-        
-        <TileLayer
-          url="https://server.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer/tile/{z}/{y}/{x}"
-          attribution="Tiles &copy; Esri &mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri"
-        />
-        </LayersControl.BaseLayer>
+       
   
   
         <LayersControl.BaseLayer name="Base Map">
