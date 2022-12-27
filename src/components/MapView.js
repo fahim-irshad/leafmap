@@ -33,7 +33,7 @@ class MapView extends Component {
         
         <LayersControl position="topright">
           
-        <LayersControl.BaseLayer   name="Base Imagery">
+        <LayersControl.BaseLayer checked name="Base Imagery">
         
         <TileLayer
           url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
