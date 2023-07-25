@@ -87,7 +87,7 @@ class MapView extends Component {
          </LayersControl>
          
          </Map>
-         <span><p>ENC Catalogue</p></span>
+         <span><p>JEEVAT Catalogue</p></span>
      </div>
     );
   }
